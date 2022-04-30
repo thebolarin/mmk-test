@@ -15,7 +15,12 @@ const options:any = {
 }
 
 if(process.env.NODE_ENV == "staging" || (process.env.NODE_ENV == "production")){
-    options['dialectOptions'] = { "ssl": true },
+    options['dialectOptions'] = {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false // <<<<<<< YOU NEED THIS
+        }
+      },
     options['ssl'] = true
 };
 
