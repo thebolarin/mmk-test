@@ -1,6 +1,6 @@
 // Prefix that all keys will start with, taken from .env file
 let prefix = process.env.REDIS_KEY_PREFIX;
-if (!prefix) prefix = 'service_cache:'
+if (!prefix) prefix = 'mmk_service_cache:'
 /**
  * Takes a string containing a Redis key name and returns a
  * string containing that key with the application's configurable

@@ -9,12 +9,8 @@ type Indexed = {
 };
 
 Router.get('/', async(req, res) => {
-    let message = 'Payment Service OK';
-
-    if(process.env.NODE_ENV !== 'production') message = 'Payment Service Staging OK!!'
-
     res.status(200).send({
-        message: message
+        message: 'Test app is ok!!!'
     });
 });
 
