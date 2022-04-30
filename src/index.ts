@@ -18,12 +18,12 @@ const start = async () => {
       app.get("env")
     );
 
-    await sequelize
-      .authenticate().then(() => console.log('Connection has been established successfully.'))
-      .catch((error: any) => {
-        console.error('Unable to connect to the database:', error);
-        throw "error";
-      });
+    // await sequelize
+    //   .authenticate().then(() => console.log('Connection has been established successfully.'))
+    //   .catch((error: any) => {
+    //     console.error('Unable to connect to the database:', error);
+    //     throw "error";
+    //   });
 
     console.log("Press CTRL-C to stop\n");
 
