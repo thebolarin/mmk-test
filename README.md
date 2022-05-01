@@ -1,7 +1,7 @@
 # MMK Test Service.
 
 ## Description
-A microservice based on MMK test
+A microservice based on MMK interview test
 ## Dependencies
 
 - Nodejs 16.13.1
@@ -10,6 +10,12 @@ A microservice based on MMK test
 
 ## Install Nodejs
 Follow the installation guide [here](https://nodejs.org/en/download/)
+
+## Install Redis
+Follow the installation guide [here](https://redis.io/docs/getting-started/#install-redis)
+
+## Install Postgres
+Follow the installation guide [here](https://www.postgresql.org/download/)
 
 ## Clone the repository
 
@@ -28,7 +34,7 @@ $ npm install
 ## Setup database and schema
 \* Ensure to have _Postgres_ , _Redis_ & _NodeJS (v16.13)_ installed on Ubuntu.
 ```
-npm run migrate
+psql -h HOST -U User -d Database -f PATH_TO_SCHEMA_FILE
 ```
 
 ## Running the app
@@ -41,7 +47,7 @@ $ npm run start:dev
 $ npm start
 ```
 
-The app should be accessible through http://localhost:6000/
+The app should be accessible through http://localhost:3000/
 ## Testing
 
 ```bash
