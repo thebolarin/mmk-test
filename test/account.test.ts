@@ -9,13 +9,6 @@ const client = redis.getClient();
 //@ts-ignore
 let commonHeaders: any = { Authorization: "xxx" };
 
-//test for authenticated user 
-//test for rate limit //outbound
-//test from and to matching account number //inbound and outbound
-//check for if the from to matches cache data //outbound
-//should return a message and also exist in cache //inbound
-
-
 it('should return 405 error if route or method is not supported', async() => {
   await request(app)
   .get('/api/user')
