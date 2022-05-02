@@ -114,7 +114,7 @@ describe('test outbound API', () => {
       expect(value).toBeTruthy();
   });
 
-  it('should return error if 50 requests is sent with the same from parameter in the last 24 hours', async () => {
+  it('should return error if more than 50 requests is sent with the same from parameter in the last 24 hours', async () => {
     const from =  '44122498';
     const to = '441224980096';
     
