@@ -23,7 +23,7 @@ describe('test inbound API', () => {
     expect(inBoundSMS).toBeDefined();
   });
 
-  it('should return error if the to parameter is not is not found in the associated phone_number data', async () => {
+  it('should return error if the to parameter is not found in the associated phone_number data', async () => {
     const from = '441224980100';
     const to = '441224459548';
 
