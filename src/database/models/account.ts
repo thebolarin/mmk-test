@@ -6,7 +6,7 @@ import sequelize from "./sequelize";
 class Account extends Model {
     public auth_id: string;
     public username: string;
-    public id: any;
+    public id: number;
 }
 
 Account.init({

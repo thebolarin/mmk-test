@@ -18,7 +18,7 @@ if(process.env.NODE_ENV == "staging" || (process.env.NODE_ENV == "production")){
     options['dialectOptions'] = {
         ssl: {
           require: true,
-          rejectUnauthorized: false // <<<<<<< YOU NEED THIS
+          rejectUnauthorized: false
         }
       },
     options['ssl'] = true

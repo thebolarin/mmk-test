@@ -25,9 +25,4 @@ PhoneNumber.init({
   sequelize,
 });
 
-// PhoneNumber.belongsTo(Account, {
-//   foreignKey: "account_id", 
-//   as: "account"
-// });
-
 export default PhoneNumber;
